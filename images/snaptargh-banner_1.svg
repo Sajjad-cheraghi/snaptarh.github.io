@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488.28 334.76">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: 'Bahnschrift_636.000wght', Bahnschrift;
+        font-size: 10px;
+        font-variation-settings: 'wght' 636, 'wdth' 100;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        opacity: .03;
+      }
+
+      .cls-3 {
+        opacity: 0;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 19.85px;
+      }
+
+      .cls-4 {
+        opacity: .02;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <path class="cls-5" d="m478.35,125.98v66.76"/>
+        <path class="cls-5" d="m212.08,182.32h69.04c6.19,0,12.13-2.46,16.51-6.84l8.91-8.91"/>
+        <path class="cls-5" d="m299.14,182.32h29.76c6.19,0,12.13-2.46,16.51-6.84l8.91-8.91"/>
+        <path class="cls-5" d="m347.93,182.32h73.43c6.19,0,12.13-2.46,16.51-6.84l8.91-8.91"/>
+        <line class="cls-5" x1="221.78" y1="196.18" x2="221.78" y2="216.03"/>
+        <line class="cls-5" x1="246.48" y1="196.18" x2="246.48" y2="216.03"/>
+        <line class="cls-5" x1="271.17" y1="196.18" x2="271.17" y2="216.03"/>
+        <line class="cls-5" x1="328.12" y1="125.98" x2="328.12" y2="146.21"/>
+        <path class="cls-5" d="m97.43,135.85c-5.27,0-10.31,2.09-14.04,5.81l-18.1,18.1-17.43,17.43c-10.84,10.84-3.16,29.36,12.16,29.36h20.25"/>
+        <path class="cls-5" d="m138.51,125.95v33.01h23.36c10.96,0,19.85,8.89,19.85,19.85v3.5h-50.39l-2.44.18c-5.27,0-10.31,2.09-14.04,5.81l-12.29,12.29c-3.72,3.72-8.77,5.81-14.04,5.81h-3.72"/>
+        <line class="cls-5" x1="105.7" y1="135.85" x2="45.97" y2="135.85"/>
+        <text class="cls-1" transform="translate(30.71 133.21)"><tspan x="0" y="0">TM</tspan></text>
+      </g>
+      <rect class="cls-4" y="70.52" width="95.75" height="95.75" rx="3.02" ry="3.02"/>
+      <rect class="cls-2" x="192.99" y="0" width="66.8" height="66.8" rx="2.11" ry="2.11"/>
+      <rect class="cls-4" x="31.18" y="224.91" width="24.49" height="24.49" rx=".77" ry=".77"/>
+      <rect class="cls-4" x="103.18" y="267.22" width="34.14" height="34.14" rx="1.08" ry="1.08"/>
+      <rect class="cls-4" x="197.44" y="122.47" width="34.14" height="34.14" rx="1.08" ry="1.08"/>
+      <rect class="cls-4" x="311.75" y="225.65" width="34.14" height="34.14" rx="1.08" ry="1.08"/>
+      <rect class="cls-3" x="376.33" y="185.57" width="90.56" height="90.56" rx="2.86" ry="2.86"/>
+      <rect class="cls-4" x="281.32" y="51.22" width="104.66" height="104.66" rx="3.3" ry="3.3"/>
+      <rect class="cls-4" x="168.49" y="200.41" width="79.42" height="79.42" rx="2.51" ry="2.51"/>
+      <rect class="cls-4" x="407.51" y="67.55" width="42.31" height="42.31" rx="1.34" ry="1.34"/>
+      <rect class="cls-2" x="269.44" y="279.84" width="54.93" height="54.93" rx="1.73" ry="1.73"/>
+      <rect class="cls-4" x="120.62" y="39.71" width="42.31" height="42.31" rx="1.34" ry="1.34"/>
+    </g>
+  </g>
+</svg>

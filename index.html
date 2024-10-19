@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وبسایت طرح های آماده ی ویدئویی و چاپی - Snapp Tarh</title>
+</head>
+<link rel="icon" type="image/png" href="images/logo.png">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: 'vazir';
+        font-style: black;
+        font-weight: 700;
+        src: url('fonts/Vazir-Black.woff') format('woff');
+
+    }
+
+    @font-face {
+        font-family: 'vazir';
+        font-style: normal;
+        font-weight: 400;
+        src: url('fonts/Vazir-Light.woff') format('woff');
+
+    }
+
+    body {
+        background-color: #3FB488;
+        color: #fcfcfc;
+        font-family: vazir, tahoma;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .wrapper {
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-top: -100px;
+        justify-content: flex-start;
+
+    }
+
+
+
+    .top {
+
+        margin-top: 20px
+    }
+
+
+
+    .down {
+        margin-bottom: 20px;
+
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        justify-content: space-between;
+
+
+    }
+
+    .main-nav-1 {
+        margin-top: 50px
+    }
+
+
+    .main-nav-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    .caption {
+        padding: 0;
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .card {
+
+        margin: 1%;
+        padding: 15px 25px;
+        border-radius: 20px;
+        background-color: #69c8a054;
+    }
+
+
+    .btn {
+        cursor: pointer;
+    }
+
+
+
+
+    .about {
+        position: fixed;
+        top: 100px;
+        left: 69px;
+        border: 0px #e6e6e6 solid;
+        padding: 16px 10px 13px 10px;
+        border-radius: 50px;
+        background-color:  #69C8A1;
+        box-shadow: 20px 0px 50px rgba(255, 248, 182, 0.34), -20px 0px 50px rgba(255, 113, 175, 0.34);
+        cursor: pointer;
+
+    }
+
+    .about:hover {
+        box-shadow: 5px 0px 50px rgba(255, 232, 155, 0.8), -5px 0px 50px rgba(255, 156, 199, 0.822);
+    }
+
+    .logo {
+        position: fixed;
+        top: 20px;
+        left: 35px;
+        cursor: pointer;
+        width: 125px;
+    }
+
+    .donate {
+        max-width: 350px;
+        min-width: 200px
+    }
+
+    .footer {
+        background-color: #69C8A1;
+        font-size: 12px
+    }
+
+    .margin-30 {
+        margin: 25px 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .logo {
+            width: 70px;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+        }
+
+        .about {
+            position: fixed;
+            top: 45px;
+            left: 21px;
+            border: 0px #e6e6e6 solid;
+            padding: 16px 10px 13px 10px;
+            border-radius: 50px;
+            background-color: #69C8A1;
+            box-shadow: 20px 0px 50px rgba(34, 255, 51, 0.34), -20px 0px 50px rgba(255, 34, 128, 0.34);
+            cursor: pointer;
+
+        }
+
+    }
+</style>
+
+<style>
+    /* The Modal (background) */
+    .modal {
+        text-align: center;
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color:  #69C8A1;
+        margin: auto;
+        padding: 0;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.7s;
+        border-radius: 10px;
+
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .modal-header {
+        padding: 2px 16px;
+        background-color:  #69C8A1;
+        color: #ffffff;
+    }
+
+    .modal-body {
+        padding: 2px 16px;
+
+    }
+
+    .modal-footer {
+        padding: 2px 16px;
+        background-color:  #69C8A1;
+        color: #ffffff;
+    }
+
+    .roham-picture {
+        max-width: 550px
+    }
+
+    .desc {
+        text-align: center;
+display: none;
+    }
+    a{
+        color: #ffead3;
+    }
+    .grow{
+        height: 60px;
+        flex-shrink: 1;
+    }
+</style>
+
+<body>
+            <p class="desc">
+                وبسایت رسمی اسنپ طرح - پلاگین فارسی اسنپ طرح-  مرجه طرح های ویدئویی ایرانی آماده 
+            </p>
+            <p class="desc">
+               Premierepro snap tarh farsi iranian plugin
+            </p>
+    <h4 id="myBtn" class="about">درباره</h4>
+    <img class="logo" src="images/logo.png" alt="Roham kids Logo">
+    <div class="wrapper">
+
+        <div class="main-nav">
+            <!-- <div class="grow"></div> -->
+            <div class="main-nav-1">
+                <img class="roham-picture" width="55%" src="images/snaptargh-banner_1.png" alt="دانلود پلاگین فارسی اسنپ طرح برای ادیتورها و ادیت ویدئو">
+            </div>
+
+
+
+            
+            
+                <a href="https://www.aparat.com/fxmotion" target="_blank"><img class="donate" width="450px" src="images/download.png" alt="حمایت از کانال افیکس موشن"></a>
+                <a href="https://www.aparat.com/fxmotion"> آموزش نحوه نصب</a>
+           
+                <div class="grow"></div>
+                <p>ما رو توی شبکه های اجتماعی دنبال کنید</p>
+
+                <div class="main-nav-3">
+    
+                    <div class="card">
+                        <a class="btn" href="https://www.youtube.com/channel/fxmotion" target="_blank"><img width="55px" src="images/youtube_1.png" alt="شبکه یوتیوب افیکس موشن"></a>
+                        <p class="caption">یوتیوب</p>
+                    </div>
+    
+                    <div class="card">
+                        <a class="btn" href="https://www.instagram.com/fxmotion-ir/" target="_blank"><img width="55px" src="images/instagram.png" alt="شبکه اینستا گرام افیکس موشن"></a>
+                        <p class="caption">اینستا</p>
+                    </div>
+    
+                    <div class="card">
+                        <a class="btn" href="https://www.aparat.com/fxmotion" target="_blank"><img width="55px" src="images/aparat.png" alt="شبکه آپارات افیکس موشن"></a>
+                        <p class="caption">آپارات</p>
+                    </div>
+                   
+                </div>
+                <div class="grow"></div>
+            <div class="footer">
+                <p class="margin-30">Copy rights | All rights reserved by <a href="https://fxmotion.ir/snapptarh" >FXmotion.ir</a> channel</p>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>درباره پلاگین اسنپ طرح</h2>
+            </div>
+            <div class="modal-body">
+                <p>Snapp Tarh</p>
+                <p>پلاگین افتر افکتــس و پـریـمیـر پـرو </p>
+                <p> 
+                    .این پلاگین سرعت شما را در تولید و انجام ادیتهای طولانی مدت افزایش خواهد داد ، برای آشنایی بیشتر با این پلاگین آموزشهای افیکس موشن در مورد اسنپ طرح را تماشا کنید
+                </p>
+
+                <p>
+                     با تشــکر - سجاد چراغی                    
+                </p>
+
+            </div>
+            <div class="modal-footer">
+                <p>❤❤❤</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body></html>
